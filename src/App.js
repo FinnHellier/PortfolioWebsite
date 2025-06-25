@@ -6,9 +6,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+          <p>npm run build</p>
+          <p>npm run deploy</p>
+          <p>git add . </p>
+          <p>git commit - m ""</p >
+              <p>git push</p >
+              <p>npm start</p >
+
+
         <a
           className="App-link"
           href="https://reactjs.org"
