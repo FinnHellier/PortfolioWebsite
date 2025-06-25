@@ -5,27 +5,19 @@ import SubdomainPage from './SubdomainPage';
 
 function App() {
     return (
-        <Router>
-            <div className="App">
+        <div className="App">
+            <Router>
                 <header className="App-header">
-                    <p>npm run build</p>
-                    <p>npm run deploy</p>
-                    <p>git add .</p>
-                    <p>git commit -m ""</p>
-                    <p>git push</p>
-                    <p>npm start</p>
-
-                    {/* Internal Links */}
-                    <Link className="App-link" to="/">Home</Link>
-                    <Link className="App-link" to="/sub">Visit Subdomain Page</Link>
+                    <nav> {/* This is a JSX comment */}
+                        <Link to="/">Home</Link> | <Link to="/subdomain">Subdomain Page</Link>
+                    </nav>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/subdomain" element={<SubdomainPage />} />
+                    </Routes>
                 </header>
-
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/sub" element={<SubdomainPage />} />
-                </Routes>
-            </div>
-        </Router>
+            </Router>
+        </div>
     );
 }
 
